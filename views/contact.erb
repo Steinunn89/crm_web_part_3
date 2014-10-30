@@ -1,0 +1,21 @@
+<h1 class="subtitle">All Contacts</h1>
+
+<ul>
+  <% $rolodex.contacts.each do |contact| %>
+    <li class="bullet"><p class="text"><%= contact.first_name %> <%= contact.last_name %> <p></li>
+  <% end %>
+</ul>
+
+<br>
+<br>
+<br>
+<br>
+
+<ul class="list">	
+	<li class="bullet"> <a class="link" href='/'> Back To Main Menu</a> 
+	</li>
+				
+	<li class="bullet"> <a class="link" href ='/contacts/new'> Create A New Contact</a>
+	</li>
+		
+</ul>
