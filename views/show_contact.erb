@@ -12,15 +12,14 @@
 /br
 /br
 /br
-/br
-/br
-/br
-/br
-/br
-/br
-/br
+<p><a class="special2" href="/contacts/<%= @contact.id %>/edit">Edit This Contact</a></p>
 
-<form action="/contacts/<%= @contact.id %>" method="post">
+
+<form  action="/contacts/<%= @contact.id %>" method="post">
   <input type="hidden" name="_method" value="delete">
-  <input type="submit" name="Delete Contact">
+  <input class="button" type="submit" value="Delete Contact" name="Delete Contact">
 </form>
+
+<!-- <button type="submit" class="bottom">
+	Delete Contact
+</button> -->
